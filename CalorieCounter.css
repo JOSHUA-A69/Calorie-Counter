@@ -1,19 +1,19 @@
 :root {
   --light-grey: #f0f0f0;
   --dark-blue: #222831;
-  --primary-blue: #30475e;
-  --secondary-blue: #3a4750;
-  --primary-yellow: #f9a826;
-  --secondary-yellow: #f08a24;
+  --primary-green: #A6E22E;
+  --secondary-green: #9cd422;
+  --light-grey-green: #e2f5c2;
+  --dark-grey-green: #798d19;
   --light-pink: #ff758f;
   --dark-red: #d72323;
   --light-green: #8dd8a3;
 }
 
 body {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'Merriweather', serif;
   font-size: 18px;
-  background-color: var(--primary-blue);
+  background-color: var(--dark-blue);
   color: var(--light-grey);
   margin: 0;
   padding: 0;
@@ -27,14 +27,15 @@ body {
 h1 {
   text-align: center;
   font-size: 2.5em;
-  color: var(--primary-yellow);
+  font-family: 'Playfair Display', serif;
+  color: var(--primary-green);
 }
 
 .container {
   width: 95%;
   max-width: 960px;
   max-height: 80vh;
-  background-color: var(--secondary-blue);
+  background-color: var(--dark-blue);
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -50,7 +51,8 @@ h1,
 label,
 legend {
   font-weight: bold;
-  color: var(--primary-yellow);
+  font-family: 'Lora', serif;
+  color: var(--primary-green);
 }
 
 .input-container {
@@ -62,15 +64,16 @@ button {
   outline: none;
   cursor: pointer;
   text-decoration: none;
-  background-color: var(--primary-yellow);
-  border: 2px solid var(--secondary-yellow);
+  background-color: var(--primary-green);
+  border: 2px solid var(--secondary-green);
   border-radius: 5px;
   padding: 10px;
   transition: background-color 0.3s, transform 0.3s;
+  font-family: 'Merriweather', serif;
 }
 
 button:hover {
-  background-color: var(--secondary-yellow);
+  background-color: var(--secondary-green);
   transform: translateY(-2px);
 }
 
@@ -88,15 +91,16 @@ select {
   font-size: 1em;
   border-radius: 5px;
   padding: 5px;
-  border: 1px solid var(--dark-blue);
+  border: 1px solid var(--dark-grey-green);
   margin-bottom: 10px;
   transition: border-color 0.3s;
+  font-family: 'Lora', serif;
 }
 
 button:hover,
 input:focus,
 select:focus {
-  border-color: var(--primary-yellow);
+  border-color: var(--primary-green);
 }
 
 fieldset,
@@ -115,6 +119,7 @@ select {
   color: var(--light-grey);
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Merriweather', serif;
 }
 
 .hide {
@@ -124,6 +129,7 @@ select {
 .output span {
   font-weight: bold;
   font-size: 1.2em;
+  font-family: 'Playfair Display', serif;
 }
 
 .surplus {
